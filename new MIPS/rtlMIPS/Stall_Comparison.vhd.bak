@@ -1,0 +1,60 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+USE IEEE.STD_LOGIC_SIGNED.ALL;
+
+ENTITY Stall_Comparison is port(--comaprosin is Asyncronus
+
+  clk:                           in std_logic := '0';
+  input_Wanna_Read_A:            in std_logic_vector (4 downto 0) := (others=>'0');
+  input_Wanna_Read_B:            in std_logic_vector (4 downto 0) := (others=>'0');
+  input_Wanna_SET:               in std_logic_vector (4 downto 0) := (others=>'0');
+  input_Wanna_RST:               in std_logic_vector (4 downto 0) := (others=>'0');
+  output_comp:                   out std_logic:='0'
+ -- out_stall:                     out std_logic_vector(31 downto 0):=(others=>'0')
+  
+  );
+end  Stall_Comparison;
+
+ARCHITECTURE rtl OF Stall_Comparison IS
+
+Component Stall_Detection is port(
+
+  input_Set:              in std_logic_vector (4 downto 0) := (others=>'0');
+  input_Reset:            in std_logic_vector (4 downto 0) := (others=>'0');
+  clk:                    in std_logic := '0';
+  output_stall:           out std_logic_vector (31 downto 0) := (others=>'0')
+  
+  );
+end Component Stall_Detection;
+
+signal output_stall_mux:std_logic_vector (31 downto 0) := (others=>'0');
+
+begin
+  
+Stall: Stall_Detection port map(clk=>clk, input_Set=>input_Wanna_SET, input_Reset=>input_Wanna_RST,output_stall=>output_stall_mux);
+  
+  process(clk) is
+   
+      variable translatorA: integer := 0;--input_Wanna_Read_A as integer
+      variable translatorB: integer := 0;--input_Wanna_Read_B as integer
+      
+      begin
+        if rising_edge(clk) then
+        translatorA := to_integer(unsigned(input_Wanna_Read_A));
+        translatorB := to_integer(unsigned(input_Wanna_Read_B));
+        if ((input_Wanna_RST = input_Wanna_Read_A AND translatorA /= 0) OR (input_Wanna_RST = input_Wanna_Read_B AND translatorB /= 0)) then
+          output_comp <= '0';
+        elsif (output_stall_mux(translatorA) = '1' OR output_stall_mux(translatorB) = '1') then
+          output_comp <= '1';
+        else
+          output_comp <= '0';
+        end if;
+      end if;
+      end process;
+      
+  --    out_stall<=output_stall_mux;
+ 
+end rtl;
+
+

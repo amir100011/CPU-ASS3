@@ -1,0 +1,231 @@
+# Reading C:/Program Files (x86)/CPU course/modelsim_ase/tcl/vsim/pref.tcl 
+# do MIPS_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\Program Files (x86)\CPU course\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\Program Files (x86)\CPU course\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Swap.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Swap
+# -- Compiling architecture Swap_Arch of Swap
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/SubstractBias.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity SubstractBias
+# -- Compiling architecture SubstractBias_Arch of SubstractBias
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Stall_Detection.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity Stall_Detection
+# -- Compiling architecture rtl of Stall_Detection
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Stall_Comparison.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity Stall_Comparison
+# -- Compiling architecture rtl of Stall_Comparison
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Sign_Tag_Comp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sign_Tag_Comp
+# -- Compiling architecture Sign_Tag_Comp_Arch of Sign_Tag_Comp
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Sign_Computation.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sign_Computation
+# -- Compiling architecture Sign_Computation_Arch of Sign_Computation
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/SEG_TO_HEX.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity SEG_TO_HEX
+# -- Compiling architecture rtl of SEG_TO_HEX
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Normalize_and_Round.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Normalize_and_Round
+# -- Compiling architecture Normalize_and_Round_Arch of Normalize_and_Round
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/MIPS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity MIPS
+# -- Compiling architecture structure of MIPS
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Leading_Zeros.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Leading_Zeros
+# -- Compiling architecture Leading_Zeros_Arch of Leading_Zeros
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/IFETCH.VHD}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_mf_components
+# -- Compiling entity Ifetch
+# -- Compiling architecture behavior of Ifetch
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/IDECODE.VHD}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Idecode
+# -- Compiling architecture behavior of Idecode
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/FPM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPM
+# -- Compiling architecture Arch_FPM of FPM
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/FPA.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPA
+# -- Compiling architecture FPA_Arch of FPA
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Exp_Sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Exp_Sub
+# -- Compiling architecture Exp_Sub_Arch of Exp_Sub
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/EXECUTE.VHD}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity Execute
+# -- Compiling architecture behavior of Execute
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/DMEMORY.VHD}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package altera_mf_components
+# -- Compiling entity dmemory
+# -- Compiling architecture behavior of dmemory
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/DFF_Piped.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity DFF_Piped
+# -- Compiling architecture rtl of DFF_Piped
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/DFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity DFF1
+# -- Compiling architecture behavioral of DFF1
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Delay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Delay
+# -- Compiling architecture Behavioral of Delay
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/Decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity Decoder_5X32
+# -- Compiling architecture rtl of Decoder_5X32
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/CONTROL.VHD}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# vcom -93 -work work {C:/Users/Dell/Desktop/MIPS NEW PROJECT/rtlMIPS/ADD_SUB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ADD_SUB
+# -- Compiling architecture ADD_SUB_Arch of ADD_SUB
+# 

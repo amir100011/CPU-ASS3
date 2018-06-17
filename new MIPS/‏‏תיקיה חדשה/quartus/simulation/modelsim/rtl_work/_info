@@ -1,0 +1,1036 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Dell\Desktop\new MIPS\quartus\simulation\modelsim
+Eadd_sub
+Z1 w1525622646
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\Dell\Desktop\new MIPS\quartus\simulation\modelsim
+Z8 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/ADD_SUB.vhd
+Z9 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/ADD_SUB.vhd
+l0
+L6
+V1zA;9:MdBhEkG=_LUDHf71
+Z10 OV;C;10.1b;51
+31
+Z11 !s108 1527598093.276000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/ADD_SUB.vhd|
+Z13 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/ADD_SUB.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 SOXB8JR`c3eYGZd7a]V1_3
+!i10b 1
+Aadd_sub_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 add_sub 0 22 1zA;9:MdBhEkG=_LUDHf71
+l15
+L13
+VH;`2eAVZ6<CMVC=U4`:0Q1
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 ;dR8agRziKk3db8kSPe8K0
+!i10b 1
+Econtrol
+Z16 w1527067468
+Z17 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+R2
+R5
+R6
+R7
+Z18 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/CONTROL.VHD
+Z19 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/CONTROL.VHD
+l0
+L7
+Vj;YXj`;WgM@61FI0gmJUM0
+R10
+31
+Z20 !s108 1527598093.172000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/CONTROL.VHD|
+Z22 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/CONTROL.VHD|
+R14
+R15
+!s100 H[Rj2f1AG7BYn9UFC^A0b1
+!i10b 1
+Abehavior
+R17
+R2
+R5
+R6
+DEx4 work 7 control 0 22 j;YXj`;WgM@61FI0gmJUM0
+l27
+L23
+Voa40ok8WGHFZPOioL6gl12
+R10
+31
+R20
+R21
+R22
+R14
+R15
+!s100 Z3[1Pa>FdPHK4>aH]CVRg2
+!i10b 1
+Edecoder_5x32
+Z23 w1527020740
+R17
+R2
+R5
+R6
+R7
+Z24 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Decoder.vhd
+Z25 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Decoder.vhd
+l0
+L6
+VOoYVScMH^98ak<QT@S=2_3
+R10
+31
+Z26 !s108 1527598093.072000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Decoder.vhd|
+Z28 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Decoder.vhd|
+R14
+R15
+!s100 W<QF<JE8L_[PYH7@GoC>c0
+!i10b 1
+Artl
+R17
+R2
+R5
+R6
+DEx4 work 12 decoder_5x32 0 22 OoYVScMH^98ak<QT@S=2_3
+l16
+L14
+V5f>7dR8_@W7HFlFS==Ye?1
+R10
+31
+R26
+R27
+R28
+R14
+R15
+!s100 KB_@gd=93=CBe6N02c0_[1
+!i10b 1
+Edelay
+Z29 w1526803715
+R4
+R5
+R6
+R7
+Z30 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Delay.vhd
+Z31 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Delay.vhd
+l0
+L6
+V^HEY[2PFV;iU3nTR:HZJ`3
+R10
+31
+Z32 !s108 1527598092.972000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Delay.vhd|
+Z34 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Delay.vhd|
+R14
+R15
+!s100 :KVd2b6[XlRiRQ87[iod>1
+!i10b 1
+Abehavioral
+R4
+R5
+R6
+DEx4 work 5 delay 0 22 ^HEY[2PFV;iU3nTR:HZJ`3
+l30
+L18
+VMcF_];c[CGhF<HP]0fT>l3
+R10
+31
+R32
+R33
+R34
+R14
+R15
+!s100 Bb<<eWkCCF<Cizd;Mi`a41
+!i10b 1
+Edff1
+Z35 w1526803693
+R2
+R3
+R4
+R5
+R6
+R7
+Z36 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF.vhd
+Z37 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF.vhd
+l0
+L6
+VW@<SFffI54jKBfbzQz?NL3
+R10
+31
+Z38 !s108 1527598092.866000
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF.vhd|
+Z40 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF.vhd|
+R14
+R15
+!s100 ?15^71enkFnC]72j?AJ@j0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 dff1 0 22 W@<SFffI54jKBfbzQz?NL3
+l15
+L14
+Vf44XARJd2hiIY^BOZ]mi:2
+R10
+31
+R38
+R39
+R40
+R14
+R15
+!s100 S@;Qcl02GoeE<ClL4mKmj3
+!i10b 1
+Edff_piped
+Z41 w1527371745
+R17
+R2
+R5
+R6
+R7
+Z42 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF_Piped.vhd
+Z43 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF_Piped.vhd
+l0
+L6
+VzEWnJ8l00?<BhHe_52S5b2
+R10
+31
+Z44 !s108 1527598092.766000
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF_Piped.vhd|
+Z46 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DFF_Piped.vhd|
+R14
+R15
+!s100 KENcG8UKn;@K8eXWH5OY>1
+!i10b 1
+Artl
+R17
+R2
+R5
+R6
+DEx4 work 9 dff_piped 0 22 zEWnJ8l00?<BhHe_52S5b2
+l21
+L16
+VdG7Wfna`<57UTi:H=Rme@3
+R10
+31
+R44
+R45
+R46
+R14
+R15
+!s100 l824K@aL7ga^cA27enbHB3
+!i10b 1
+Edmemory
+Z47 w1526619530
+Z48 DPx9 altera_mf 20 altera_mf_components 0 22 ^IX6G>H7:I6bRMgMQQ0UY1
+R17
+R2
+R5
+R6
+R7
+Z49 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DMEMORY.VHD
+Z50 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/DMEMORY.VHD
+l0
+L11
+VeNX=h:z]n80EJ<YGUz<Q^1
+R10
+31
+Z51 !s108 1527598092.656000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DMEMORY.VHD|
+Z53 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/DMEMORY.VHD|
+R14
+R15
+!s100 =N8o4<a_jX7RlXN0ZE=M80
+!i10b 1
+Abehavior
+R48
+R17
+R2
+R5
+R6
+DEx4 work 7 dmemory 0 22 eNX=h:z]n80EJ<YGUz<Q^1
+l21
+L19
+V:cT[REl?`:TLo<zeU32YW2
+R10
+31
+R51
+R52
+R53
+R14
+R15
+!s100 Gj@2;BJJ[6cY2;XNcZh842
+!i10b 1
+Eexecute
+Z54 w1527519202
+R17
+R2
+R5
+R6
+R7
+Z55 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/EXECUTE.VHD
+Z56 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/EXECUTE.VHD
+l0
+L8
+V^?n:Y3RR:jIFNl4ZBVF<I3
+R10
+31
+Z57 !s108 1527598092.552000
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/EXECUTE.VHD|
+Z59 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/EXECUTE.VHD|
+R14
+R15
+!s100 Ndb>LM7=22Q:a^DGJI5E42
+!i10b 1
+Abehavior
+R17
+R2
+R5
+R6
+DEx4 work 7 execute 0 22 ^?n:Y3RR:jIFNl4ZBVF<I3
+l47
+L24
+V>8onUzfe_MTL>3ICCDP0K1
+R10
+31
+R57
+R58
+R59
+R14
+R15
+!s100 BH^`IJFEM771WVRPnd0FH0
+!i10b 1
+Eexp_sub
+Z60 w1525631849
+R2
+R3
+R4
+R5
+R6
+R7
+Z61 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Exp_Sub.vhd
+Z62 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Exp_Sub.vhd
+l0
+L6
+VTQ54GLT3[dhjJnO[;<zS<0
+R10
+31
+Z63 !s108 1527598092.452000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Exp_Sub.vhd|
+Z65 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Exp_Sub.vhd|
+R14
+R15
+!s100 Wl4gDN?M^cn6X1o;G?Nko2
+!i10b 1
+Aexp_sub_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 exp_sub 0 22 TQ54GLT3[dhjJnO[;<zS<0
+l14
+L13
+V^e0QFQ[Slj>8<eHUF6FI01
+R10
+31
+R63
+R64
+R65
+R14
+R15
+!s100 755>`JTmR3zRzAhJj9G^O0
+!i10b 1
+Efpa
+Z66 w1525635247
+R2
+R3
+R4
+R5
+R6
+R7
+Z67 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPA.vhd
+Z68 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPA.vhd
+l0
+L6
+VBh6`^85LNkZ52_nkcUK_=2
+R10
+31
+Z69 !s108 1527598092.346000
+Z70 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPA.vhd|
+Z71 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPA.vhd|
+R14
+R15
+!s100 gAkC>Qnb_VfCUd[9a4VRc3
+!i10b 1
+Afpa_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 fpa 0 22 Bh6`^85LNkZ52_nkcUK_=2
+l80
+L13
+V?;RihgfGJX4TKioXz_P[P1
+R10
+31
+R69
+R70
+R71
+R14
+R15
+!s100 R4fXPTN3L3anE:`O2L=Y22
+!i10b 1
+Efpm
+Z72 w1525690033
+R2
+R3
+R4
+R5
+R6
+R7
+Z73 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPM.vhd
+Z74 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPM.vhd
+l0
+L6
+VnOTLY4>bcbG[;L4mcV68h2
+R10
+31
+Z75 !s108 1527598092.252000
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPM.vhd|
+Z77 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/FPM.vhd|
+R14
+R15
+!s100 [QH8D6aQ5?ARbF0PHPT:<2
+!i10b 1
+Aarch_fpm
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 fpm 0 22 nOTLY4>bcbG[;L4mcV68h2
+l19
+L17
+VjlCimhFcGlA09niazf5g?3
+R10
+31
+R75
+R76
+R77
+R14
+R15
+!s100 ?T[2bH8lgUnj:U;QOc_jo0
+!i10b 1
+Eidecode
+Z78 w1527177666
+R3
+R2
+R5
+R6
+R7
+Z79 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IDECODE.VHD
+Z80 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/IDECODE.VHD
+l0
+L7
+V<PZ>zf_e8KmZlZ2C8gZSQ1
+R10
+31
+Z81 !s108 1527598092.142000
+Z82 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IDECODE.VHD|
+Z83 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IDECODE.VHD|
+R14
+R15
+!s100 ID25Sogg?@3FSb[IS@3D`0
+!i10b 1
+Abehavior
+R3
+R2
+R5
+R6
+DEx4 work 7 idecode 0 22 <PZ>zf_e8KmZlZ2C8gZSQ1
+l48
+L31
+VdhfCGETfTFbaOj7?7LDI>2
+R10
+31
+R81
+R82
+R83
+R14
+R15
+!s100 J=i>NX?>9A:8OMh_<ljSU3
+!i10b 1
+Eifetch
+Z84 w1527428602
+R48
+R3
+R2
+R5
+R6
+R7
+Z85 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IFETCH.VHD
+Z86 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/IFETCH.VHD
+l0
+L10
+VNR:O2gfBZ<8a7b>]ez?@n3
+R10
+31
+Z87 !s108 1527598092.021000
+Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IFETCH.VHD|
+Z89 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/IFETCH.VHD|
+R14
+R15
+!s100 BY4kK?8Bj9B<OD9:>T=?E0
+!i10b 1
+Abehavior
+R48
+R3
+R2
+R5
+R6
+DEx4 work 6 ifetch 0 22 NR:O2gfBZ<8a7b>]ez?@n3
+l33
+L27
+V>d@6DV_G`SRll_B8X=0@M0
+R10
+31
+R87
+R88
+R89
+R14
+R15
+!s100 i5`;;BCL9cjRL_W5lDVO@0
+!i10b 1
+Eleading_zeros
+Z90 w1525693303
+R2
+R3
+R4
+R5
+R6
+R7
+Z91 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Leading_Zeros.vhd
+Z92 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Leading_Zeros.vhd
+l0
+L6
+V_7KUccO^5F@zlHSAW5Id=2
+R10
+31
+Z93 !s108 1527598091.915000
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Leading_Zeros.vhd|
+Z95 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Leading_Zeros.vhd|
+R14
+R15
+!s100 BjkRLD]n?WaA=RZ=7nlzF3
+!i10b 1
+Aleading_zeros_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 leading_zeros 0 22 _7KUccO^5F@zlHSAW5Id=2
+l15
+L13
+VAj_YN3X8ciL=nk]m4O7230
+R10
+31
+R93
+R94
+R95
+R14
+R15
+!s100 g5FAdn3M1leMI_I2gcGfS3
+!i10b 1
+Emips
+Z96 w1527515940
+R2
+R5
+R6
+R7
+Z97 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/MIPS.vhd
+Z98 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/MIPS.vhd
+l0
+L6
+VIg>h_MNV5h2II4HVU<9[12
+R10
+31
+Z99 !s108 1527598091.796000
+Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/MIPS.vhd|
+Z101 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/MIPS.vhd|
+R14
+R15
+!s100 E^nz<DM?V0QXCWWVFzYeP1
+!i10b 1
+Astructure
+R2
+R5
+R6
+Z102 DEx4 work 4 mips 0 22 Ig>h_MNV5h2II4HVU<9[12
+l165
+L20
+VnNB?F[95hgk79Y5e^Qm<e1
+R10
+31
+R99
+R100
+R101
+R14
+R15
+!s100 LPzBB`If@FZb>DzzdMK452
+!i10b 1
+Emips_tb
+Z103 w1527184893
+R7
+Z104 8C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tb_struct.vhd
+Z105 FC:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tb_struct.vhd
+l0
+L11
+VVeHhZ;nYFKL=IVTYB`i0P1
+!s100 i:<^AG_GPcHJfH;X^R@DY1
+R10
+31
+!i10b 1
+Z106 !s108 1527598093.496000
+Z107 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tb_struct.vhd|
+Z108 !s107 C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tb_struct.vhd|
+R14
+R15
+Astruct
+Z109 DEx4 work 11 mips_tester 0 22 D;>G`]?BQ5Z8:Omzn41]d2
+R102
+DEx4 work 7 mips_tb 0 22 VeHhZ;nYFKL=IVTYB`i0P1
+R2
+R5
+R6
+l93
+L31
+V4UmB[ZPdO;093M>lB9Y9W3
+!s100 >I3>Wo9me8E2d7c2zB19E3
+R10
+31
+!i10b 1
+R106
+R107
+R108
+R14
+R15
+Emips_tester
+Z110 w1527443565
+R2
+R5
+R6
+R7
+Z111 8C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tester_struct.vhd
+Z112 FC:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tester_struct.vhd
+l0
+L13
+VD;>G`]?BQ5Z8:Omzn41]d2
+R10
+31
+Z113 !s108 1527598093.392000
+Z114 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tester_struct.vhd|
+Z115 !s107 C:/Users/Dell/Desktop/new MIPS/quartus/../tb/mips_tester_struct.vhd|
+R14
+R15
+!s100 7f>]85mzdR8_=gn;289?H0
+!i10b 1
+Astruct
+R109
+R2
+R5
+R6
+l62
+L47
+V2Uh0TcTe@M@PK4Rkn^MXG2
+R10
+31
+R113
+R114
+R115
+R14
+R15
+!s100 Yn8<h<nN4PoI6A_0kKoPa1
+!i10b 1
+Enormalize_and_round
+Z116 w1525635299
+R2
+R3
+R4
+R5
+R6
+R7
+Z117 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Normalize_and_Round.vhd
+Z118 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Normalize_and_Round.vhd
+l0
+L6
+VEe@aRFDBTERk8L[g<>I3O2
+R10
+31
+Z119 !s108 1527598091.672000
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Normalize_and_Round.vhd|
+Z121 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Normalize_and_Round.vhd|
+R14
+R15
+!s100 M9DmD;_lj;J>OCbT7fo<01
+!i10b 1
+Anormalize_and_round_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 19 normalize_and_round 0 22 Ee@aRFDBTERk8L[g<>I3O2
+l16
+L14
+VWz6J?CHXF?oTSnjBB0;@Q1
+R10
+31
+R119
+R120
+R121
+R14
+R15
+!s100 cP6JjF]9>azQ__MSRmOiV1
+!i10b 1
+Eseg_to_hex
+Z122 w1527177557
+R2
+R3
+R4
+R5
+R6
+R7
+Z123 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SEG_TO_HEX.vhd
+Z124 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/SEG_TO_HEX.vhd
+l0
+L6
+VZ<fFMPTZLn>hdReRYH08k2
+R10
+31
+Z125 !s108 1527598091.546000
+Z126 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SEG_TO_HEX.vhd|
+Z127 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SEG_TO_HEX.vhd|
+R14
+R15
+!s100 m5DfL?_]aXZkm:LB>^]_d1
+!i10b 1
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 seg_to_hex 0 22 Z<fFMPTZLn>hdReRYH08k2
+l16
+L14
+V?I>nc@X=MMIXj1dKJLEOb1
+R10
+31
+R125
+R126
+R127
+R14
+R15
+!s100 LS2>?YM@]1ML^lzTK9EXK2
+!i10b 1
+Esign_computation
+Z128 w1525495542
+R2
+R3
+R4
+R5
+R6
+R7
+Z129 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Computation.vhd
+Z130 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Computation.vhd
+l0
+L6
+V^G^Ec:Lkf<DRQSP_InR=N1
+R10
+31
+Z131 !s108 1527598091.442000
+Z132 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Computation.vhd|
+Z133 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Computation.vhd|
+R14
+R15
+!s100 G:NI>;>LLV8Y><hS44Ue]2
+!i10b 1
+Asign_computation_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 16 sign_computation 0 22 ^G^Ec:Lkf<DRQSP_InR=N1
+l14
+L12
+Vh02lj5D@6;6cjPQoojX5F1
+R10
+31
+R131
+R132
+R133
+R14
+R15
+!s100 >X3NoFN6g=:PD@ie<`gio2
+!i10b 1
+Esign_tag_comp
+Z134 w1525624957
+R2
+R3
+R4
+R5
+R6
+R7
+Z135 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Tag_Comp.vhd
+Z136 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Tag_Comp.vhd
+l0
+L7
+VWXo3GG9T@]A^^lL6?ADD61
+R10
+31
+Z137 !s108 1527598091.342000
+Z138 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Tag_Comp.vhd|
+Z139 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Sign_Tag_Comp.vhd|
+R14
+R15
+!s100 GNJ2oW9bmCzXZF065PHho2
+!i10b 1
+Asign_tag_comp_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 sign_tag_comp 0 22 WXo3GG9T@]A^^lL6?ADD61
+l14
+L13
+VzSj_Ii=Goc`K2f8jPLPQE2
+R10
+31
+R137
+R138
+R139
+R14
+R15
+!s100 ZOM=aHl;>nEKenLKmiZl?0
+!i10b 1
+Estall_comparison
+Z140 w1527439066
+R2
+R17
+R4
+R5
+R6
+R7
+Z141 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Comparison.vhd
+Z142 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Comparison.vhd
+l0
+L6
+VKm<@^5hzl7TSCn7FVX8jb3
+R10
+31
+Z143 !s108 1527598091.242000
+Z144 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Comparison.vhd|
+Z145 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Comparison.vhd|
+R14
+R15
+!s100 <[n36d1<FnG95h_^mUTSN1
+!i10b 1
+Artl
+R2
+R17
+R4
+R5
+R6
+DEx4 work 16 stall_comparison 0 22 Km<@^5hzl7TSCn7FVX8jb3
+l33
+L17
+V:3RDBLLnN@FSag1zRYh701
+R10
+31
+R143
+R144
+R145
+R14
+R15
+!s100 ];;o@hJM5]HZ9h]WESE?J0
+!i10b 1
+Estall_detection
+Z146 w1527371617
+R17
+R2
+R5
+R6
+R7
+Z147 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Detection.vhd
+Z148 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Detection.vhd
+l0
+L6
+Vc8Y6NQ15I7o4hFQ5OjB6W2
+R10
+31
+Z149 !s108 1527598091.142000
+Z150 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Detection.vhd|
+Z151 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Detection.vhd|
+R14
+R15
+!s100 :DV@EJAYVEX^c4_EYOE7H0
+!i10b 1
+Artl
+R17
+R2
+R5
+R6
+DEx4 work 15 stall_detection 0 22 c8Y6NQ15I7o4hFQ5OjB6W2
+l39
+L17
+VFkEoz2Slh>A9;n>b>BF]Q2
+R10
+31
+R149
+R150
+R151
+R14
+R15
+!s100 VK>Dl4THm?mH=UXdRL]@G0
+!i10b 1
+Estall_mux
+Z152 w1527098227
+R17
+R2
+R5
+R6
+R7
+Z153 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Mux.vhd
+Z154 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Mux.vhd
+l0
+L6
+VKf^ZBiffi8;1Kj<BeHAk92
+R10
+31
+Z155 !s108 1527598090.842000
+Z156 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Mux.vhd|
+Z157 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Stall_Mux.vhd|
+R14
+R15
+!s100 9<JmXRnho6hOaB3H<NoTO0
+!i10b 1
+Artl
+R17
+R2
+R5
+R6
+DEx4 work 9 stall_mux 0 22 Kf^ZBiffi8;1Kj<BeHAk92
+l17
+L15
+V:EdnbGC1nDfhkdb>Y9GZ]0
+R10
+31
+R155
+R156
+R157
+R14
+R15
+!s100 JP`hf^l=m9h]:;e:OBz8V2
+!i10b 1
+Esubstractbias
+Z158 w1525692106
+R2
+R3
+R4
+R5
+R6
+R7
+Z159 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SubstractBias.vhd
+Z160 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/SubstractBias.vhd
+l0
+L7
+VD@Q6aTo:50e`]><P;]N7C3
+R10
+31
+Z161 !s108 1527598091.042000
+Z162 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SubstractBias.vhd|
+Z163 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/SubstractBias.vhd|
+R14
+R15
+!s100 nFHjzzlW^5RZfT:N[dPTR2
+!i10b 1
+Asubstractbias_arch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 substractbias 0 22 D@Q6aTo:50e`]><P;]N7C3
+l16
+L15
+VY9T[MGP1cUKegg4^95BKa3
+R10
+31
+R161
+R162
+R163
+R14
+R15
+!s100 J?^bA<3H_:GE_ZneP@Bi10
+!i10b 1
+Eswap
+Z164 w1525693009
+R4
+R5
+R6
+R7
+Z165 8C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Swap.vhd
+Z166 FC:/Users/Dell/Desktop/new MIPS/rtlMIPS/Swap.vhd
+l0
+L5
+VOTP<@:DBV_9mdo[WJYf4@1
+R10
+31
+Z167 !s108 1527598090.946000
+Z168 !s90 -reportprogress|300|-93|-work|work|C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Swap.vhd|
+Z169 !s107 C:/Users/Dell/Desktop/new MIPS/rtlMIPS/Swap.vhd|
+R14
+R15
+!s100 1PIf7HDz]=9]nZZXZcc==1
+!i10b 1
+Aswap_arch
+R4
+R5
+R6
+DEx4 work 4 swap 0 22 OTP<@:DBV_9mdo[WJYf4@1
+l15
+L13
+V^6VdJn9T=UV6a2`?h3z1?0
+R10
+31
+R167
+R168
+R169
+R14
+R15
+!s100 0DW6;L3=RDE_Q3IJ<G7Ul2
+!i10b 1

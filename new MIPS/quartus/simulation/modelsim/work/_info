@@ -1,0 +1,124 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Dor Livne\Desktop\Study\CPU\Ass3\Lab3-1\ex9\quartus\simulation\modelsim
+Edelay
+Z1 w1526743321
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Dor Livne\Desktop\Study\CPU\Ass3\Lab3-1\ex9\quartus\simulation\modelsim
+Z6 8C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay.vhd
+Z7 FC:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay.vhd
+l0
+L6
+V1PdDjfVQnG<=Y3T:KidN20
+Z8 OV;C;10.1b;51
+32
+Z9 !s108 1526743325.694000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay.vhd|
+Z11 !s107 C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 >NX?EKa@SCgUkCzl[R9`00
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 5 delay 0 22 1PdDjfVQnG<=Y3T:KidN20
+l24
+L14
+VO9M_bOFY>K;o;?XoG^2WZ0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 L`nY[Mb6HAJhJK0DR74;_0
+!i10b 1
+Edelay_tb
+Z14 w1526743481
+Z15 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+R5
+Z17 8C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay_TB.vhd
+Z18 FC:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay_TB.vhd
+l0
+L6
+VEM7CGLK?bgN4C<I0[4@3f3
+!s100 D16cEgdj@^S5QI;LgUj0g1
+R8
+32
+!i10b 1
+Z19 !s108 1526743506.036000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay_TB.vhd|
+Z21 !s107 C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/Delay_TB.vhd|
+R12
+R13
+Artl
+R15
+R16
+R2
+R3
+R4
+Z22 DEx4 work 8 delay_tb 0 22 EM7CGLK?bgN4C<I0[4@3f3
+l19
+L9
+Vo@NXLMf_GRDZ_QLTVYPoR1
+!s100 CoO4bR8]dla7JIA[iXbz=3
+R8
+32
+!i10b 1
+R19
+R20
+R21
+R12
+R13
+Edff
+Z23 w1526743291
+R15
+R16
+R2
+R3
+R4
+R5
+Z24 8C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/DFF.vhd
+Z25 FC:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/DFF.vhd
+l0
+L6
+VCJCk:2?dZ?2a;kMdh`Na?0
+R8
+32
+Z26 !s108 1526743294.795000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/DFF.vhd|
+Z28 !s107 C:/Users/Dor Livne/Desktop/Study/CPU/Ass3/Lab3-1/ex9/quartus/simulation/modelsim/DFF.vhd|
+R12
+R13
+!s100 Cn69X?PVa<e0jXzU_naP[0
+!i10b 1
+Abehavioral
+R15
+R16
+R2
+R3
+R4
+DEx4 work 3 dff 0 22 CJCk:2?dZ?2a;kMdh`Na?0
+l15
+L13
+VUQcP]MJgIzc0fAQk;[42B0
+R8
+32
+R26
+R27
+R28
+R12
+R13
+!s100 M<XMiGjJ6=I<<XK3`C49Y3
+!i10b 1

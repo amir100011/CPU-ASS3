@@ -1,0 +1,395 @@
+Design Assistant report for MIPS
+Sat May 26 15:27:47 2018
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Assistant Summary
+  3. Design Assistant Settings
+  4. Medium Violations
+  5. Information only Violations
+  6. Design Assistant Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Design Assistant Summary                                                ;
++-----------------------------------+-------------------------------------+
+; Design Assistant Status           ; Analyzed - Sat May 26 15:27:47 2018 ;
+; Revision Name                     ; MIPS                                ;
+; Top-level Entity Name             ; MIPS                                ;
+; Family                            ; Cyclone II                          ;
+; Total Critical Violations         ; 0                                   ;
+; Total High Violations             ; 0                                   ;
+; Total Medium Violations           ; 1                                   ;
+; - Rule C106                       ; 1                                   ;
+; Total Information only Violations ; 145                                 ;
+; - Rule T101                       ; 95                                  ;
+; - Rule T102                       ; 50                                  ;
++-----------------------------------+-------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Assistant Settings                                                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Option                                                                                                                                                                                                                                                                               ; Setting      ; To ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Design Assistant mode                                                                                                                                                                                                                                                                ; Post-Fitting ;    ;
+; Threshold value for clock net not mapped to clock spines rule                                                                                                                                                                                                                        ; 25           ;    ;
+; Minimum number of clock port feed by gated clocks                                                                                                                                                                                                                                    ; 30           ;    ;
+; Minimum number of node fan-out                                                                                                                                                                                                                                                       ; 30           ;    ;
+; Maximum number of nodes to report                                                                                                                                                                                                                                                    ; 50           ;    ;
+; Rule C101: Gated clock should be implemented according to the Altera standard scheme                                                                                                                                                                                                 ; On           ;    ;
+; Rule C102: Logic cell should not be used to generate an inverted clock signal                                                                                                                                                                                                        ; On           ;    ;
+; Rule C103: Gated clock does not feed at least a pre-defined number of clock ports to effectively save power                                                                                                                                                                          ; On           ;    ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                                                                                                                                   ; On           ;    ;
+; Rule C105: Clock signal should be a global signal (Rule applies during post-fitting analysis. This rule applies during both post-fitting analysis and post-synthesis analysis if the design targets a MAX 3000 or MAX 7000 device. For more information, see the Help for the rule.) ; On           ;    ;
+; Rule C106: Clock signal source should not drive registers triggered by different clock edges                                                                                                                                                                                         ; On           ;    ;
+; Rule R101: Combinational logic used as a reset signal should be synchronized                                                                                                                                                                                                         ; On           ;    ;
+; Rule R102: External reset signals should be synchronized using two cascaded registers                                                                                                                                                                                                ; On           ;    ;
+; Rule R103: External reset signal should be correctly synchronized                                                                                                                                                                                                                    ; On           ;    ;
+; Rule R104: The reset signal that is generated in one clock domain and used in another clock domain should be correctly synchronized                                                                                                                                                  ; On           ;    ;
+; Rule R105: The reset signal that is generated in one clock domain and used in another clock domain should be synchronized                                                                                                                                                            ; On           ;    ;
+; Rule T101: Nodes with more than the specified number of fan-outs                                                                                                                                                                                                                     ; On           ;    ;
+; Rule T102: Top nodes with the highest number of fan-outs                                                                                                                                                                                                                             ; On           ;    ;
+; Rule A101: Design should not contain combinational loops                                                                                                                                                                                                                             ; On           ;    ;
+; Rule A102: Register output should not drive its own control signal directly or through combinational logic                                                                                                                                                                           ; On           ;    ;
+; Rule A103: Design should not contain delay chains                                                                                                                                                                                                                                    ; On           ;    ;
+; Rule A104: Design should not contain ripple clock structures                                                                                                                                                                                                                         ; On           ;    ;
+; Rule A105: Pulses should not be implemented asynchronously                                                                                                                                                                                                                           ; On           ;    ;
+; Rule A106: Multiple pulses should not be generated in design                                                                                                                                                                                                                         ; On           ;    ;
+; Rule A107: Design should not contain SR latches                                                                                                                                                                                                                                      ; On           ;    ;
+; Rule A108: Design should not contain latches                                                                                                                                                                                                                                         ; On           ;    ;
+; Rule S101: Output enable and input of the same tri-state node should not be driven by same signal source                                                                                                                                                                             ; On           ;    ;
+; Rule S102: Synchronous port and asynchronous port of the same register should not be driven by the same signal source                                                                                                                                                                ; On           ;    ;
+; Rule S103: More than one asynchronous port of a register should not be driven by the same signal source                                                                                                                                                                              ; On           ;    ;
+; Rule S104: Clock port and any other port of a register should not be driven by the same signal source                                                                                                                                                                                ; On           ;    ;
+; Rule D101: Data bits are not synchronized when transferred between asynchronous clock domains                                                                                                                                                                                        ; On           ;    ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain                                                                                                                 ; On           ;    ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains                                                                                                                                                                              ; On           ;    ;
+; Rule M101: Data bits are not synchronized when transferred to the state machine of asynchronous clock domains                                                                                                                                                                        ; Off          ;    ;
+; Rule M102: No reset signal defined to initialize the state machine                                                                                                                                                                                                                   ; Off          ;    ;
+; Rule M103: State machine should not contain an unreachable state                                                                                                                                                                                                                     ; Off          ;    ;
+; Rule M104: State machine should not contain a deadlock state                                                                                                                                                                                                                         ; Off          ;    ;
+; Rule M105: State machine should not contain a dead transition                                                                                                                                                                                                                        ; Off          ;    ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Medium Violations                                                                                                                                                                                 ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+; Rule name                                                                                    ; Name                                                                                               ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+; Rule C106: Clock signal source should not drive registers triggered by different clock edges ; clock                                                                                              ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYIDEXALU:9:DELAYARRAY2|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                    ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:27:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:28:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYWRITEREG:1:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q                                  ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:17:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:16:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYWRITEREG:4:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q                                  ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:20:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYFETCH:15:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                                     ;
+;  Positive edge destination node(s) list                                                      ; Delay:\DELAYWRITEREG:2:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q                                  ;
+;  Negative edge destination node(s) list                                                      ; dmemory:MEM|altsyncram:data_memory|altsyncram_pmp3:auto_generated|ram_block1a0~porta_address_reg7  ;
+;  Negative edge destination node(s) list                                                      ; dmemory:MEM|altsyncram:data_memory|altsyncram_pmp3:auto_generated|ram_block1a18~porta_address_reg7 ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:9:Single_DFF|old_out    ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:8:Single_DFF|old_out    ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:10:Single_DFF|old_out   ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:11:Single_DFF|old_out   ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:2:Single_DFF|old_out    ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:1:Single_DFF|old_out    ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:5:Single_DFF|old_out    ;
+;  Negative edge destination node(s) list                                                      ; Stall_Comparison:Stall_Unit|Stall_Detection:Stall|DFF_Piped:\DFF_generator:4:Single_DFF|old_out    ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Information only Violations                                                                                                                      ;
++------------------------------------------------------------------+---------------------------------------------------------------------+---------+
+; Rule name                                                        ; Name                                                                ; Fan-Out ;
++------------------------------------------------------------------+---------------------------------------------------------------------+---------+
+; Rule T101: Nodes with more than the specified number of fan-outs ; clock~clkctrl                                                       ; 1227    ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; ~GND                                                                ; 40      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYIDEXALUOP:1:DELAYTWO|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 37      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; control:CTL|Equal3~0                                                ; 36      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Stall_Comparison:Stall_Unit|output_comp                             ; 40      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYWRITEREG:1:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:17:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 257     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|Equal0~11                                                ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; reset                                                               ; 76      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:16:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 257     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[23][7]~15                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:20:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYWRITEREG:2:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|write_register_address[2]~4                              ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:18:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 241     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYWRITEREG:3:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:19:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 241     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYWRITEREG:0:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 51      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:DELAY_MEMTOREG|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q                  ; 37      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; control:CTL|Equal1~1                                                ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:DELAY_ALUSRC|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                    ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[27][1]~14                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~55                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[13][13]~31                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~69                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:22:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[30][28]~9                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~64                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[26][26]~7                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:24:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 240     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:23:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 240     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[22][0]~6                                  ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[18][28]~8                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[20][29]~10                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[16][31]~12                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[28][8]~13                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[24][24]~11                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:21:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[31][10]~17                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[19][18]~16                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[17][17]~4                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[25][18]~2                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[29][27]~5                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[21][31]~3                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Delay:\DELAYFETCH:25:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[12][18]~32                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[14][22]~30                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[15][3]~33                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[11][4]~22                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[8][4]~21                                  ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[10][26]~20                                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[9][5]~19                                  ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[3][11]~27                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[1][21]~28                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[2][14]~29                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[5][5]~24                                  ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[4][26]~25                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[7][23]~26                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array[6][26]~23                                 ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|ALU_ctl[1]                                              ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~54                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|Equal0~2                                                ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|LessThan0~14               ; 86      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~49                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|ADD_SUB:ADDSUB|Add0~73                     ; 65      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~50                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|Add1~2                     ; 61      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~48                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[1]~22       ; 66      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~47                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~63                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~62                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~51                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~7  ; 58      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[0]~17       ; 50      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~60                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~52                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[3]~23       ; 37      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~53                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[2]~18       ; 56      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~46                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~45                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~44                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~61                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~56                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~65                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~0                                         ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~10 ; 62      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~67                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[4]~21       ; 39      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~66                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~58                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~59                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~57                                        ; 31      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Idecode:ID|register_array~68                                        ; 31      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; clock~clkctrl                                                       ; 1227    ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:17:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 257     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:16:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 257     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:21:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:22:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:19:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 241     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:18:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 241     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:23:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 240     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:24:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 240     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|LessThan0~14               ; 86      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; reset                                                               ; 76      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[1]~22       ; 66      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|ADD_SUB:ADDSUB|Add0~73                     ; 65      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~10 ; 62      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|Add1~2                     ; 61      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~7  ; 58      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[2]~18       ; 56      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYWRITEREG:0:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 51      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[0]~17       ; 50      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ~GND                                                                ; 40      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Stall_Comparison:Stall_Unit|output_comp                             ; 40      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[4]~21       ; 39      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYIDEXALUOP:1:DELAYTWO|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 37      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[3]~23       ; 37      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:DELAY_MEMTOREG|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q                  ; 37      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; control:CTL|Equal3~0                                                ; 36      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYWRITEREG:2:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYWRITEREG:1:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYWRITEREG:3:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q   ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|Equal0~11                                                ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|Equal0~2                                                ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:DELAY_ALUSRC|DFF1:\DFFARRAY:0:DFF0:DFF00|Q                    ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Delay:\DELAYFETCH:20:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q      ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; control:CTL|Equal1~1                                                ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[29][27]~5                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[5][5]~24                                  ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[18][28]~8                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[6][26]~23                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[30][28]~9                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[27][1]~14                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[7][23]~26                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[31][10]~17                                ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[26][26]~7                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[16][31]~12                                ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[21][31]~3                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[2][14]~29                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[1][21]~28                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[19][18]~16                                ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Idecode:ID|register_array[3][11]~27                                 ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Execute:EXE|ALU_ctl[1]                                              ; 32      ;
++------------------------------------------------------------------+---------------------------------------------------------------------+---------+
+
+
++---------------------------+
+; Design Assistant Messages ;
++---------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Design Assistant
+    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
+    Info: Processing started: Sat May 26 15:27:45 2018
+Info: Command: quartus_drc --read_settings_files=on --write_settings_files=off MIPS -c MIPS
+Warning (308078): Old Design Assistant assignment is used to turn ON/OFF rule. ENABLE_DA_RULE or DISABLE_DA_RULE assignment should be used to turn ON/OFF Design Assistant rule.
+    Warning (308079): CLK_RULE_COMB_CLOCK
+    Warning (308079): CLK_RULE_INV_CLOCK
+    Warning (308079): CLK_RULE_INPINS_CLKNET
+    Warning (308079): CLK_RULE_CLKNET_CLKSPINES
+    Warning (308079): CLK_RULE_MIX_EDGES
+    Warning (308079): RESET_RULE_COMB_ASYNCH_RESET
+    Warning (308079): RESET_RULE_UNSYNCH_EXRESET
+    Warning (308079): RESET_RULE_IMSYNCH_EXRESET
+    Warning (308079): RESET_RULE_IMSYNCH_ASYNCH_DOMAIN
+    Warning (308079): RESET_RULE_UNSYNCH_ASYNCH_DOMAIN
+    Warning (308079): RESET_RULE_INPINS_RESETNET
+    Warning (308079): DRC_REPORT_FANOUT_EXCEEDING
+    Warning (308079): DRC_REPORT_TOP_FANOUT
+    Warning (308079): NONSYNCHSTRUCT_RULE_COMBLOOP
+    Warning (308079): NONSYNCHSTRUCT_RULE_REG_LOOP
+    Warning (308079): NONSYNCHSTRUCT_RULE_DELAY_CHAIN
+    Warning (308079): NONSYNCHSTRUCT_RULE_RIPPLE_CLK
+    Warning (308079): NONSYNCHSTRUCT_RULE_ILLEGAL_PULSE_GEN
+    Warning (308079): NONSYNCHSTRUCT_RULE_MULTI_VIBRATOR
+    Warning (308079): NONSYNCHSTRUCT_RULE_SRLATCH
+    Warning (308079): NONSYNCHSTRUCT_RULE_LATCH_UNIDENTIFIED
+    Warning (308079): NONSYNCHSTRUCT_RULE_COMB_DRIVES_RAM_WE
+    Warning (308079): NONSYNCHSTRUCT_RULE_ASYN_RAM
+    Warning (308079): SIGNALRACE_RULE_TRISTATE
+    Warning (308079): SIGNALRACE_RULE_RESET_RACE
+    Warning (308079): ACLK_RULE_NO_SZER_ACLK_DOMAIN
+    Warning (308079): ACLK_RULE_SZER_BTW_ACLK_DOMAIN
+    Warning (308079): ACLK_RULE_IMSZER_ADOMAIN
+    Warning (308079): HCPY_VREF_PINS
+Info (332104): Reading SDC File: 'MIPS.out.sdc'
+Critical Warning (138069): Setting INCREMENTAL_COMPILATION to "OFF" is no longer supported. Assignment is ignored. To disable partitions, set the IGNORE_PARTITIONS global assignment to "ON" instead.
+Warning (308022): (Medium) Rule C106: Clock signal source should not drive registers triggered by different clock edges. Found 1 node(s) related to this rule.
+    Warning (308010): Node  "clock"
+Info (308046): (Information) Rule T101: Nodes with more than the specified number of fan-outs. (Value defined:30). Found 95 node(s) with highest fan-out.
+    Info (308011): Node  "clock~clkctrl"
+    Info (308011): Node  "~GND"
+    Info (308011): Node  "Delay:\DELAYIDEXALUOP:1:DELAYTWO|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "control:CTL|Equal3~0"
+    Info (308011): Node  "Stall_Comparison:Stall_Unit|output_comp"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:1:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:17:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Idecode:ID|Equal0~11"
+    Info (308011): Node  "reset"
+    Info (308011): Node  "Delay:\DELAYFETCH:16:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Idecode:ID|register_array[23][7]~15"
+    Info (308011): Node  "Delay:\DELAYFETCH:20:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:2:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Idecode:ID|write_register_address[2]~4"
+    Info (308011): Node  "Delay:\DELAYFETCH:18:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:3:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:19:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:0:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Delay:DELAY_MEMTOREG|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "control:CTL|Equal1~1"
+    Info (308011): Node  "Delay:DELAY_ALUSRC|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Idecode:ID|register_array[27][1]~14"
+    Info (308011): Node  "Idecode:ID|register_array~55"
+    Info (308011): Node  "Idecode:ID|register_array[13][13]~31"
+    Info (308011): Node  "Idecode:ID|register_array~69"
+    Info (308011): Node  "Delay:\DELAYFETCH:22:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Idecode:ID|register_array[30][28]~9"
+    Info (308011): Node  "Idecode:ID|register_array~64"
+    Info (308011): Node  "Idecode:ID|register_array[26][26]~7"
+    Info (308011): Node  "Delay:\DELAYFETCH:24:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Info (308044): (Information) Rule T102: Top nodes with the highest number of fan-outs. (Value defined:50). Found 50 node(s) with highest fan-out.
+    Info (308011): Node  "clock~clkctrl"
+    Info (308011): Node  "Delay:\DELAYFETCH:17:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:16:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:21:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:22:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:19:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:18:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:23:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Delay:\DELAYFETCH:24:DELAYARRAYF|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|LessThan0~14"
+    Info (308011): Node  "reset"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[1]~22"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|ADD_SUB:ADDSUB|Add0~73"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~10"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Exp_Sub:EXPSUB1|Add1~2"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Normalize_and_Round:NORMALIZEROUND|Add1~7"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[2]~18"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:0:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[0]~17"
+    Info (308011): Node  "~GND"
+    Info (308011): Node  "Stall_Comparison:Stall_Unit|output_comp"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[4]~21"
+    Info (308011): Node  "Delay:\DELAYIDEXALUOP:1:DELAYTWO|DFF1:\DFFARRAY:0:DFF0:DFF00|Q"
+    Info (308011): Node  "Execute:EXE|FPA:FPA_CONS|Leading_Zeros:LEADINGZEROS|M_z[3]~23"
+    Info (308011): Node  "Delay:DELAY_MEMTOREG|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "control:CTL|Equal3~0"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:2:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:1:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Delay:\DELAYWRITEREG:3:DELAYARRAYDE|DFF1:\DFFARRAY:1:DFFN:DFFNN|Q"
+    Info (308011): Node  "Idecode:ID|Equal0~11"
+    Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Info (308007): Design Assistant information: finished post-fitting analysis of current design -- generated 145 information messages and 1 warning messages
+Info: Quartus II 64-Bit Design Assistant was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4604 megabytes
+    Info: Processing ended: Sat May 26 15:27:47 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
